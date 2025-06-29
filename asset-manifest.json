@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Hendi/static/css/main.db97285b.css",
+    "main.js": "/Hendi/static/js/main.99737f26.js",
+    "index.html": "/Hendi/index.html",
+    "main.db97285b.css.map": "/Hendi/static/css/main.db97285b.css.map",
+    "main.99737f26.js.map": "/Hendi/static/js/main.99737f26.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.db97285b.css",
+    "static/js/main.99737f26.js"
+  ]
+}
