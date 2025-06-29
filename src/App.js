@@ -3,11 +3,12 @@
 
 // --- Import Library & Styles ---
 import React, { useState, useCallback } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'; // Wajib: Import CSS Bootstrap untuk styling dasar
+import 'bootstrap/dist/js/bootstrap.bundle.min'; // Wajib: Import JS Bootstrap untuk fungsionalitas komponen
+import './App.css'; // Penting: Import CSS kustom Anda (setelah Bootstrap agar bisa menimpa gaya)
 
 // --- Data Aplikasi ---
+// Data produk dipusatkan di sini untuk kemudahan pengelolaan dalam satu file.
 const productsData = [
     { id: 1, name: "Yamaha APX 500ii", image: "img/YAMAHA.png", description: "Gitar elektro-akustik serbaguna dengan body ramping yang nyaman dan preamp SYSTEM66 untuk performa panggung yang jernih. Cocok untuk pemula hingga pemain menengah yang mencari kualitas Yamaha.", price: 3850000 },
     { id: 2, name: "Cort Sfx Dao Nat", image: "img/CORT.png", description: "Desain body Slim dengan cutaway dan top kayu Dao yang eksotis, menghasilkan resonansi hangat dan tampilan menawan. Dilengkapi preamp Fishman Isys+ untuk suara elektrik yang kaya.", price: 4100000 },
@@ -260,7 +261,6 @@ const AppFooter = () => (
     </footer>
 );
 
-// --- Komponen Utama Aplikasi (App) ---
 function App() {
     const [registrationMessage, setRegistrationMessage] = useState('');
 
@@ -302,5 +302,4 @@ function App() {
     );
 }
 
-// Mengekspor komponen App sebagai default agar bisa diimpor oleh index.js
 export default App;
